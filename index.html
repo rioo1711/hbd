@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Ayushiii</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Dancing+Script:wght@600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ambience" id="ambience"></div>
+
+<audio id="music" loop>
+    <source src="happybirthday.mp3.mpeg" type="audio/mpeg">
+</audio>
+
+<div class="progress" id="progress"></div>
+
+<div class="app">
+
+  <section class="slide active" data-index="0">
+    <div class="scallop-top"></div><div class="scallop-bottom"></div>
+    <div class="hang-hearts"></div>
+    <div class="corner-hearts"></div>
+    <div class="content">
+      <div class="script" style="font-size:2.8rem;">Happy Birthday Ayushiii🎀</div>
+      <h1 class="slide-title">I hope you're doing well in life...😊 <br>
+        I made Something small for you, hope you'll like that...💝</h1>
+      <div class="gift">🎁</div>
+      <button class="pill" id="gift" onclick="next()">Click to open</button>
+    </div>
+  </section>
+
+  <section class="slide" data-index="1">
+    <div class="scallop-top"></div><div class="scallop-bottom"></div>
+    <div class="hang-hearts"></div>
+    <div class="corner-hearts"></div>
+    <div class="content">
+      <h1 class="slide-title"> I know aapko ye sab pasand nhi h, but still iss baar kuch alag try kiya h. pata nhi aapko kaisa lagega... <br>Kaho toh continue karein?</h1>
+      <div class="btn-stack">
+        <div class="btn-row">
+          <button class="pill" onclick="next()">Yes ❤️</button>
+          <button class="pill" onclick="next()">why not? 😍</button>
+        </div>
+        <button class="pill" id="noBtn">Nahiii</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" data-index="2">
+    <div class="scallop-top"></div><div class="scallop-bottom"></div>
+    <div class="hang-hearts"></div>
+    <div class="corner-hearts"></div>
+    <div class="content">
+      <h1 class="slide-title">Toh ye lines uss ladki ke liye h, jiske liye mere paas perfect words toh nhi h, but phir bhi kuch kehna chahta hu... kahu???</h1>
+      <div class="btn-stack">
+        <div class="btn-row">
+          <button class="pill" onclick="next()">Okay😒</button>
+          <button class="pill" onclick="next()">Go ahead</button>
+        </div>
+        <button class="pill" onclick="next()">Jaldi bhonk</button>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="slide" data-index="3">
+    <div class="scallop-top"></div><div class="scallop-bottom"></div>
+    <div class="hang-hearts"></div>
+    <div class="corner-hearts"></div>
+    <div class="content">
+      <h1 class="slide-title">Iss time woh ladki kuch aisi dikh rahi h...</h1>
+      <div class="photo-slot chat-slot" id="slotChat1" style="background-image:url('images/phone.jpeg')"></div>
+      <p class="chat-caption"> bade hi dhyaan se mann m mujhe gaaliyaan dete hue apne phone ko dekh rahi h...❤️</p>
+      <button class="pill" onclick="next()">Next</button>
+    </div>
+  </section>
+
+  <section class="slide" data-index="4">
+    <div class="scallop-top"></div><div class="scallop-bottom"></div>
+    <div class="hang-hearts"></div>
+    <div class="corner-hearts"></div>
+    <div class="content">
+      <h1 class="slide-title">Ladki acchi h, but...</h1>
+      <div class="photo-slot chat-slot" id="slotChat2" style="background-image:url('images/angry.jpeg')"></div>
+      <p class="chat-caption"> Bas dikkat sirf itni si h ki ye chhoti-chhoti baaton ko bhi zarurat se zyada soch leti h. Har baat ki itni tension le leti h ki aakhir mein bechari ke sar mein itna tez dard hone lagta hai ki theek hone m bhi do din lag jaate h... ❤️  <br>
+
+Isiliye kehta hu, itna stress mat liya karo. Thoda relax raha karo Miss Stenographer! Har cheez ko itna seriously lene ki zaroorat nhi h. Kabhi-kabhi cheezon ko unke haal par chhod dena chahiye. Yaqeen maano, waqt ke saath sab apne aap normal ho hi jaata h yaar... ❤️</p>
+      <button class="pill" onclick="next()">Next</button>
+    </div>
+  </section>
+
+  <section class="slide" data-index="5">
+    <div class="scallop-top"></div><div class="scallop-bottom"></div>
+    <div class="hang-hearts"></div>
+    <div class="corner-hearts"></div>
+    <div class="content">
+      <h1 class="slide-title">haan waise jo bhi ho, iss badmash ke baare m ek special baat pata h aapko kya h? next page pr dekhiye zara...</h1>
+      <button class="pill" onclick="next()">Kya h?</button>
+    </div>
+  </section>
+
+  <section class="slide" data-index="6">
+    <div class="scallop-top"></div><div class="scallop-bottom"></div>
+    <div class="hang-hearts"></div>
+    <div class="corner-hearts"></div>
+    <div class="content">
+      <h1 class="slide-title">Ladki itni sanskari h ki cheekne ke baad sorry zarur bolti h..🤧 <br>
+        <p>pata nhi kyu but mujhe ye baat hamesha yaad rehti h...</p>
+      </h1>
+      <div class="photo-slot" id="slotMain" style="background-image:url('images/sneeze.jpeg')"></div>
+      <button class="pill" onclick="next()">Next</button>
+    </div>
+  </section>
+
+  <section class="slide" data-index="7">
+    <div class="scallop-top"></div><div class="scallop-bottom"></div>
+    <div class="hang-hearts"></div>
+    <div class="corner-hearts"></div>
+    <div class="content">
+      <div style="color:var(--script); font-weight:700; font-size:1.3rem;"> WAIT... WAIT... WAIT... </div>
+      <h1 class="slide-title">Kahi woh ladki aap hi toh nhi ho?? 🎂</h1>
+      <button class="pill" onclick="next()">??? 👀</button>
+    </div>
+  </section>
+
+  <section class="slide" data-index="8">
+    <div class="scallop-top"></div><div class="scallop-bottom"></div>
+    <div class="hang-hearts"></div>
+    <div class="corner-hearts"></div>
+    <div class="content">
+      <h1 class="slide-title" style="font-size:1.6rem;"> OFC IT'S YOU, AyushiiI❤️</h1>
+      <div class="letter">
+        <p>First of all Happiest Birthday Ayushiii🎂</p>
+        <p>Today is all about you — your smile, your laugh, and the amazing person you are.</p>
+        <p>Ayushiii life m ups and downs toh aate hi rehte h, bas kabhi unki wajah se apni smile mat khona. Hamesha choti-choti cheezon m khushiyan dhundhna aur khud ko hamesha priority dena. I hope life always treat you kindly & I hope life surrounds you with the kind of people who genuinely care for you, 😇bring out the happiest version of you & never let you feel alone.❤️</p>
+        <p> Pata h, waqt ke saath bohot kuch badal jaata h, cheezein pehle jaisi nahi rehti, logon ke beech distance bhi aa jaata h, but that doesn't mean ki kisi ke liye achha sochna band kar diya jaaye..</p>
+        <p>Ayushiii Take care of yourself, Always❤️</p>
+        <p>Happy 1711, once again...❤️✨🎉</p>
+      </div>
+      <div class="heart-mosaic" id="heartMosaic"></div>
+      <footer class="final-note"> Thank you! yaha tak aane ke liye. I hope aapko accha laga hoga..💖</footer>
+      <button class="pill" onclick="restart()">Replay ↺</button>
+    </div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
